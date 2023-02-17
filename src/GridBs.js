@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import FetchApiPractice from "./FetchApiPractice";
 
 function GridBs() {
   return (
@@ -35,6 +36,8 @@ function GridBs() {
         Submit
       </Button>
       </div>
+
+      <FetchApiPractice/>
     </div>
   );
 }

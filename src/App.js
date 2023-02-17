@@ -22,7 +22,8 @@ import GridBs from "./GridBs";
 import CardPractice from "./Image/CardPractice";
 import NavbarPractice from "./NavbarPractice";
 import CarouselPractice from "./CarouselPractice";
-import UseReduserPractice from "./UseReduserPractice";
+// import UseReduserPractice from "./UseReduserPractice";
+import FetchApiPractice from "./FetchApiPractice";
 
 // export const myContext = createContext()
 function App(){
@@ -35,7 +36,8 @@ function App(){
 
     return(
         <>
-        <UseReduserPractice/>
+        
+        {/* <UseReduserPractice/> */}
         <NavbarPractice/>
         <NavLink/>
         <CarouselPractice/>
