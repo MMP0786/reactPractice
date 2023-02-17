@@ -17,6 +17,7 @@ import "./App.css"
 import { Route, Routes } from "react-router-dom";
 import NavLink from "./NavLink";
 import PageNotFound from "./PageNotFound";
+import BootstrapPractice from "./BootstrapPractice";
 
 // export const myContext = createContext()
 function App(){
@@ -37,6 +38,7 @@ function App(){
                 <Route path="login" element={<MultiCheckbox/>}/>
             </Route>
             <Route path="/about" element={ <ListUpdate/>}/>
+            <Route path="/BootStrap" element={ <BootstrapPractice/>}/>
             <Route path="/use" element={<UseState/>}/>
             <Route path="*" element={<PageNotFound/>}/>
         </Routes>
