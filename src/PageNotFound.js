@@ -1,8 +1,12 @@
 import React from 'react'
+import AxiosPostPractice from './AxiosPostPractice'
 
 function PageNotFound() {
   return (
-    <div>Sorry PageNotFound 404 Error</div>
+    <div>Sorry PageNotFound 404 Error
+
+      <AxiosPostPractice/>
+    </div>
 
   )
 }

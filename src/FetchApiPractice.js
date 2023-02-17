@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+// import AxiosPostPractice from "./AxiosPostPractice";
 
 function FetchApiPractice() {
   const [item, setItem] = useState([]);
@@ -55,6 +56,7 @@ function FetchApiPractice() {
         </Row>
       </Container>
       <p>{item.title}</p>
+      {/* <AxiosPostPractice/> */}
     </div>
   );
 }
