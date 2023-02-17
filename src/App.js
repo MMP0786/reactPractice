@@ -20,6 +20,9 @@ import PageNotFound from "./PageNotFound";
 // import BootstrapPractice from "./BootstrapPractice";
 import GridBs from "./GridBs";
 import CardPractice from "./Image/CardPractice";
+import NavbarPractice from "./NavbarPractice";
+import CarouselPractice from "./CarouselPractice";
+import UseReduserPractice from "./UseReduserPractice";
 
 // export const myContext = createContext()
 function App(){
@@ -32,7 +35,10 @@ function App(){
 
     return(
         <>
+        <UseReduserPractice/>
+        <NavbarPractice/>
         <NavLink/>
+        <CarouselPractice/>
         <Routes>
             <Route path="/" element={ <RouterPractice/>}>
                 <Route index element={<ControlledForm/>}/>
@@ -44,6 +50,7 @@ function App(){
             <Route path="/use" element={<UseState/>}/>
             <Route path="*" element={<PageNotFound/>}/>
             <Route path="Card" element={<CardPractice/>}/>
+            <Route path="" element={<CardPractice/>}/>
         </Routes>
        
         {/* <UseRefPracitce/> */}
