@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import AxiosGet from './AxiosGet';
 
 function ControlledForm() {
     const [value, setValue] = useState({
@@ -47,6 +48,8 @@ const handleSubmit = (e)=>{
             <input type="submit"   />
             </div>
         </form>
+
+        <AxiosGet/>
     </div>
   )
 }
