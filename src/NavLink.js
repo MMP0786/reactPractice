@@ -13,6 +13,7 @@ function NavLink() {
         <Link to="/about" style={styled}>AboutInfo</Link>
         <Link to={"/use"} style={styled}>UseState</Link>
         <Link to={"/BootStrap"} style={styled}>BootStrap</Link>
+        <Link to={"/Card"} style={styled}>BootStrap Card</Link>
         {/* <Link to={"/about"} style={styled}>About Info</Link> */}
     </div>
   )

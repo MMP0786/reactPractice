@@ -19,6 +19,7 @@ import NavLink from "./NavLink";
 import PageNotFound from "./PageNotFound";
 // import BootstrapPractice from "./BootstrapPractice";
 import GridBs from "./GridBs";
+import CardPractice from "./Image/CardPractice";
 
 // export const myContext = createContext()
 function App(){
@@ -42,6 +43,7 @@ function App(){
             <Route path="/BootStrap" element={ <GridBs/>}/>
             <Route path="/use" element={<UseState/>}/>
             <Route path="*" element={<PageNotFound/>}/>
+            <Route path="Card" element={<CardPractice/>}/>
         </Routes>
        
         {/* <UseRefPracitce/> */}
