@@ -25,6 +25,9 @@ import CarouselPractice from "./CarouselPractice";
 // import UseReduserPractice from "./UseReduserPractice";
 import FetchApiPractice from "./FetchApiPractice";
 import AsyncAndPromise from "./AsyncAndPromise";
+import CrudProject from "./CrudProject";
+import Read from "./Read";
+import Update from "./Update";
 
 // export const myContext = createContext()
 function App(){
@@ -37,14 +40,17 @@ function App(){
 
     return(
         <>
-        <AsyncAndPromise/>
+        {/* <AsyncAndPromise/> */}
         {/* <UseReduserPractice/> */}
         <NavbarPractice/>
         <NavLink/>
         <CarouselPractice/>
+        <CrudProject/>
         <Routes>
             <Route path="/" element={ <RouterPractice/>}>
                 <Route index element={<ControlledForm/>}/>
+                <Route path={"read"} element={<Read/>}/>
+                <Route path={"update"} element={<Update/>}/>
                 <Route path={"signUp"} element={<ControlledForm/>}/>
                 <Route path="login" element={<MultiCheckbox/>}/>
             </Route>
