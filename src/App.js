@@ -24,6 +24,7 @@ import NavbarPractice from "./NavbarPractice";
 import CarouselPractice from "./CarouselPractice";
 // import UseReduserPractice from "./UseReduserPractice";
 import FetchApiPractice from "./FetchApiPractice";
+import AsyncAndPromise from "./AsyncAndPromise";
 
 // export const myContext = createContext()
 function App(){
@@ -36,7 +37,7 @@ function App(){
 
     return(
         <>
-        
+        <AsyncAndPromise/>
         {/* <UseReduserPractice/> */}
         <NavbarPractice/>
         <NavLink/>
