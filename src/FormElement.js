@@ -4,12 +4,19 @@ import { Button } from "react-bootstrap";
 function FormElement() {
   const [checked, setChecked] = useState("");
   const [hobyy, setHobby] = useState([]);
-  const [drp, setDrp] = useState("")
+  const [drp, setDrp] = useState("");
   const [handleBox, setHandleBox] = useState({
     name: "",
     email: "",
     age: "",
   });
+
+  const handleChecked = (e) => {
+    const checkVlaue = e.target.value;
+    const check = e.target.checked;
+
+    console.log(check, checkVlaue);
+  };
 
   function handleText(e) {
     setHandleBox({
@@ -18,11 +25,11 @@ function FormElement() {
     });
   }
 
-  const handlG = (e)=>{
-    setChecked(e.target.checked)
-    console.log(e.target.checked)
-     console.log(e.target.value)
-  }
+  const handlG = (e) => {
+    setChecked(e.target.checked);
+    console.log(e.target.checked);
+    console.log(e.target.value);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -68,20 +75,13 @@ function FormElement() {
           <label htmlFor="">Gender : </label>
           <br></br>
           <label htmlFor=""> Male &nbsp;</label>
-          <input
-            type="radio"
-            name="gender"
-            value={"Male"}
-            checked={checked}
-            onChange={handlG}
-          />
+          <input type="radio" name="gender" value={"Male"} onChange={handlG} />
 
           <label htmlFor=""> &nbsp; Female &nbsp;</label>
           <input
             type="radio"
             name="gender"
             value={"Female"}
-            checked={checked}
             onChange={handlG}
           />
         </div>
@@ -90,18 +90,39 @@ function FormElement() {
           <label htmlFor="">Hobbies : </label>
           <br></br>
           <label htmlFor="">Reading &nbsp;</label>
-          <input type="checkbox" name="hobby"  value={"Reading"} />
+          <input
+            type="checkbox"
+            name="hobby"
+            onChange={handleChecked}
+            value={"Reading"}
+          />
 
           <label htmlFor=""> &nbsp;Learning &nbsp;</label>
-          <input type="checkbox" name="hobby"  value={"Learning"} />
+          <input
+            type="checkbox"
+            name="hobby"
+            onChange={handleChecked}
+            value={"Learning"}
+          />
 
           <label htmlFor=""> &nbsp;Walking &nbsp;</label>
-          <input type="checkbox" name="hobby"  value={"Walking"} />
+          <input
+            type="checkbox"
+            name="hobby"
+            onChange={handleChecked}
+            value={"Walking"}
+          />
         </div>
         <br></br>
 
         <div>
-          <label htmlFor="" value={drp} onChange={(e)=> setDrp(e.target.value)}>Country : &nbsp;</label>
+          <label
+            htmlFor=""
+            value={drp}
+            onChange={(e) => setDrp(e.target.value)}
+          >
+            Country : &nbsp;
+          </label>
           <select name="" id="">
             <option value="India">India</option>
             <option value="Pakistan">Pakistan</option>
@@ -122,6 +143,15 @@ function FormElement() {
           ></textarea>
         </div>
         <br></br>
+
+        <label htmlFor=""> &nbsp;Terms and condition &nbsp;</label>
+        <input
+          type="checkbox"
+          name="hobby"
+          
+                
+        />
+
         <div>
           <Button input type="submit">
             Submit
