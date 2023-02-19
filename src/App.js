@@ -28,6 +28,7 @@ import AsyncAndPromise from "./AsyncAndPromise";
 import CrudProject from "./CrudProject";
 import Read from "./Read";
 import Update from "./Update";
+import FormElement from "./FormElement";
 
 // export const myContext = createContext()
 function App(){
@@ -47,6 +48,7 @@ function App(){
         <CarouselPractice/>
         <CrudProject/>
         <Routes>
+            <Route path="Forms" element={<FormElement/>}/>
             <Route path="/" element={ <RouterPractice/>}>
                 <Route index element={<ControlledForm/>}/>
                 <Route path={"read"} element={<Read/>}/>
