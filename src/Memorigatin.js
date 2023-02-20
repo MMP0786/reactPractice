@@ -1,10 +1,13 @@
 import React from 'react'
 
-function Memorigatin() {
+function Memorigatin(props) {
     console.log("from memorigation")
   return (
-    <div>Memorigatin</div>
+    <div>
+        <div>Memorigatin of which named {props.name} </div>
+    <button onClick={props.method}> Click to update</button>
 
+    </div>
   )
 }
 
