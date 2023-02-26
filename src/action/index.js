@@ -10,3 +10,8 @@ export const decrease = () => {
     type: "DECREAMENT"
   }
 }
+export const zero = () => {
+  return {
+    type: "none"
+  }
+}

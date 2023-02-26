@@ -7,7 +7,7 @@ const Inc_dec = (state = initialState, action)=>{
             return state +1
         case "DECREAMENT":
             return  state-1;
-        default: return state;
+        default: return initialState;
     }
 }
 
